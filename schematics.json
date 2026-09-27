@@ -1,0 +1,131 @@
+[
+  {
+    "id": "giger-cathedral",
+    "title": "Giger Cathedral",
+    "downloadUrl": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/schematics/giger-cathedral.schem",
+    "fileName": "giger-cathedral.schem",
+    "previewImageUrl": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/giger-cathedral/front.jpg",
+    "gallery": [
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/giger-cathedral/hero.jpg",
+        "label": "Hero shot"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/giger-cathedral/front.jpg",
+        "label": "Front"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/giger-cathedral/right.jpg",
+        "label": "Right side"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/giger-cathedral/back.jpg",
+        "label": "Back"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/giger-cathedral/left.jpg",
+        "label": "Left side"
+      }
+    ],
+    "size": [
+      284,
+      292,
+      192
+    ],
+    "blocks": 1054303,
+    "description": "Biomechanical cathedral: deepslate and blackstone spires, red-lit windows, 96 routed rooms. Base must be at y28 or lower.",
+    "premium": false,
+    "tags": [
+      "gothic",
+      "biomech",
+      "huge",
+      "dark"
+    ]
+  },
+  {
+    "id": "spaceport",
+    "title": "Spaceport",
+    "downloadUrl": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/schematics/spaceport.schem",
+    "fileName": "spaceport.schem",
+    "previewImageUrl": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/spaceport/front.jpg",
+    "gallery": [
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/spaceport/hero.jpg",
+        "label": "Hero shot"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/spaceport/front.jpg",
+        "label": "Front"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/spaceport/right.jpg",
+        "label": "Right side"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/spaceport/back.jpg",
+        "label": "Back"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/spaceport/left.jpg",
+        "label": "Left side"
+      }
+    ],
+    "size": [
+      129,
+      51,
+      133
+    ],
+    "blocks": 44873,
+    "description": "Futuristic terminal with control tower, glowing window bands and a roundabout on its own plot.",
+    "premium": false,
+    "tags": [
+      "futuristic",
+      "modern",
+      "plot",
+      "large"
+    ]
+  },
+  {
+    "id": "dragon",
+    "title": "Dragon",
+    "downloadUrl": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/schematics/dragon.schem",
+    "fileName": "dragon.schem",
+    "previewImageUrl": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/dragon/front.jpg",
+    "gallery": [
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/dragon/hero.jpg",
+        "label": "Hero shot"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/dragon/front.jpg",
+        "label": "Front"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/dragon/right.jpg",
+        "label": "Right side"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/dragon/back.jpg",
+        "label": "Back"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/dragon/left.jpg",
+        "label": "Left side"
+      }
+    ],
+    "size": [
+      43,
+      46,
+      47
+    ],
+    "blocks": 6420,
+    "description": "Rearing blue dragon sculpture on a mossy stone outcrop.",
+    "premium": false,
+    "tags": [
+      "sculpture",
+      "fantasy",
+      "dragon",
+      "medium"
+    ]
+  }
+]
