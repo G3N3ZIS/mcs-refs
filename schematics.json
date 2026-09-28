@@ -162,7 +162,7 @@
       81
     ],
     "blocks": 322304,
-    "description": "Ribbon-wrapped glass spire: 86 rooms around a glass core of switchback stairs, spiral walkways lit every 6 blocks, 4 doors out to each of the 3 outer rings, a Throne Room and a crown park. 36 glowing glass bulbs (sea lantern, glowstone, redstone) hang from the tendril ends and fin tips. Paste at y -60 so the top reaches 319.",
+    "description": "Ribbon-wrapped glass spire, full height (380 blocks): 86 rooms around a glass core of switchback stairs, spiral walkways lit every 6 blocks, 4 doors out to each of the 3 outer rings, a Throne Room and a crown park. 36 glowing glass bulbs hang from the tendril ends and fin tips. Needs a superflat/void world pasted at y -60, or the G3N3XUS Tall World datapack. For normal worlds use Cloud Spire Standard.",
     "premium": false,
     "tags": [
       "spire",
@@ -170,6 +170,47 @@
       "futuristic",
       "huge",
       "glass"
+    ]
+  },
+  {
+    "id": "cloud-spire-standard",
+    "title": "Cloud Spire Standard",
+    "downloadUrl": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/schematics/cloud-spire-standard.schem",
+    "fileName": "cloud-spire-standard.schem",
+    "previewImageUrl": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/cloud-spire-standard/thumb.jpg",
+    "gallery": [
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/cloud-spire-standard/front.jpg",
+        "label": "Front"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/cloud-spire-standard/right.jpg",
+        "label": "Right side"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/cloud-spire-standard/back.jpg",
+        "label": "Back"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/cloud-spire-standard/left.jpg",
+        "label": "Left side"
+      }
+    ],
+    "size": [
+      81,
+      254,
+      81
+    ],
+    "blocks": 220879,
+    "description": "Cloud Spire, standard height (254 blocks) for normal worlds: paste at sea level (y 63) and the top reaches y 316. Same design as the full spire: 50 rooms, spiral walkways, 4 doors out to each of the 3 rings, a Throne Room, a crown park and 36 glowing glass bulbs.",
+    "premium": false,
+    "tags": [
+      "spire",
+      "tower",
+      "futuristic",
+      "large",
+      "glass",
+      "vanilla-height"
     ]
   }
 ]
