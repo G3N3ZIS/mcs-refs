@@ -136,6 +136,10 @@
     "previewImageUrl": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/cloud-spire-standard/thumb.jpg",
     "gallery": [
       {
+        "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/cloud-spire-standard/hero.jpg",
+        "label": "Hero shot"
+      },
+      {
         "url": "https://raw.githubusercontent.com/G3N3ZIS/mcs-refs/main/previews/cloud-spire-standard/front.jpg",
         "label": "Front"
       },
@@ -157,8 +161,8 @@
       254,
       81
     ],
-    "blocks": 220879,
-    "description": "Cloud Spire, standard height (254 blocks) for normal worlds: paste at sea level (y 63) and the top reaches y 316. Same design as the full spire: 50 rooms, spiral walkways, 4 doors out to each of the 3 rings, a Throne Room, a crown park and 36 glowing glass bulbs.",
+    "blocks": 221209,
+    "description": "Cloud Spire (254 blocks tall) for normal worlds: paste at sea level (y 63) and the top reaches y 316. A grand quartz-framed arch at the front, 46 rooms around a glass core of switchback stairs, spiral walkways, 4 quartz-framed doors out to each of the 3 rings, a Throne Room, a crown park and 36 glowing glass bulbs (sea lantern, glowstone or lapis, one kind per bulb).",
     "premium": false,
     "tags": [
       "spire",
