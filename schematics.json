@@ -157,12 +157,12 @@
       }
     ],
     "size": [
-      81,
+      101,
       254,
-      81
+      101
     ],
-    "blocks": 221209,
-    "description": "Cloud Spire (254 blocks tall) for normal worlds: paste at sea level (y 63) and the top reaches y 316. A grand quartz-framed arch at the front, 46 rooms around a glass core of switchback stairs, spiral walkways, 4 quartz-framed doors out to each of the 3 rings, a Throne Room, a crown park and 36 glowing glass bulbs (sea lantern, glowstone or lapis, one kind per bulb).",
+    "blocks": 279941,
+    "description": "Cloud Spire (254 blocks tall, 101 wide) for normal worlds: paste at sea level (y 63) and the top reaches y 316. Tapers from a wide base to a flared crown park. A grand quartz-framed arch at the front, 4 open halls (garden, sculpture, canopy forest, throne room), 50 apartments along a 5-wide promenade round the glass core, spiral walkways, 4 quartz-framed doors out to each of the 3 rings, sea-lantern ceilings and bright light throughout, and 36 glowing glass bulbs (sea lantern, glowstone or lapis, one kind per bulb).",
     "premium": false,
     "tags": [
       "spire",
