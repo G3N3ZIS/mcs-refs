@@ -22,9 +22,9 @@
 ```bash
 pip install pillow numpy
 ./fetch.sh                                  # raw renders -> raw/
-python3 make_seamless.py raw textures       # seamless 1K -> textures/
+python3 make_seamless.py raw textures       # seamless 1K -> textures/ (previews/ = 2×2 tiling check)
 ```
 
-`seamless.json` sets the method per texture. The default is an offset cross-fade, which suits organic surfaces such as glazes, cracks and clay. For grid textures (Delft, azulejo, encaustic, hex), add `"crop": [l, t, r, b]` set to a whole number of tile repeats so the grout falls exactly on the edges.
+`seamless.json` sets the method per texture. The default, `quilt`, half-shifts the image and patches the seams back along minimum-difference cuts, so cracks join up with no ghosting. `blend` (an offset cross-fade) is kept as a fallback. For grid textures (Delft, azulejo, encaustic, hex), add `"crop": [l, t, r, b]` set to a whole number of tile repeats so the grout falls exactly on the edges.
 
 The prompts are kept in the OpenArt history. They all share the same suffix: *flat orthographic top-down scan, even diffuse lighting, no shadows/vignette/perspective, fills frame edge to edge, PBR albedo, hyperrealistic, ultra-detailed.*
