@@ -19,7 +19,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 HERE = Path(__file__).parent
-PACK_FORMAT = 34  # Java 1.21 / 1.21.1
+PACK_FORMAT = 88  # same declaration as Genesis: loads 1.21.1 (34) through 1.21.11
 
 # texture -> (display name, vanilla block it replaces)
 PACK = {
@@ -71,7 +71,9 @@ def build():
 
     (root / "pack.mcmeta").write_text(json.dumps({"pack": {
         "pack_format": PACK_FORMAT,
-        "supported_formats": [34, 48],
+        "supported_formats": {"min_inclusive": 34, "max_inclusive": PACK_FORMAT},
+        "min_format": 34,
+        "max_format": PACK_FORMAT,
         "description": f"Ceramics: {len(PACK)} seamless 1K ceramic blocks",
     }}, indent=2))
 
