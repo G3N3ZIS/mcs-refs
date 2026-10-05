@@ -1,6 +1,7 @@
 {
   "delft_tile": {
-    "method": "quilt"
+    "method": "none",
+    "note": "3x3 grid, wrap join matches inner joins"
   },
   "azulejo_tile": {
     "method": "quilt"

@@ -38,6 +38,7 @@ PACK = {
     "ash_glaze_stoneware": ("Anagama Ash-Glaze Stoneware", "brown_concrete"),
     "fluted_white_relief": ("Fluted White Relief",        "white_terracotta"),
     "matte_black_hex":     ("Matte Black Hex",            "black_terracotta"),
+    "delft_tile":          ("Delft Blue Rosettes",        "light_blue_concrete"),
 }
 
 
