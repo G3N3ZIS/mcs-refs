@@ -4,7 +4,7 @@
 **Folder:** `packs/ceramics/`
 **Goal:** 1K (1024²), seamless, hyperrealistic ceramic textures, generated with OpenArt Nano Banana 2 and made tileable locally.
 
-## Finished: 11 textures (+ PBR/emissive maps)
+## Finished: 15 textures, built into dist/Ceramics.zip (see build_pack.py)
 
 | # | File | Descriptive name |
 |---|------|------------------|
@@ -51,3 +51,10 @@ The user sends the backlog images in batches in normal messages. Process each on
 ### Added after the first handoff
 | 10 | `crystalline_glaze.png` (+`_metallic`, `_roughness`, `_normal`) | Frost Crystal Glaze: teal-cobalt matte with metallic gold/silver crystals |
 | 11 | `glow_voronoi_plasma.png` (+`_emissive`) | Plasma Voronoi Panel: obsidian cells, magenta-to-coral glowing crevices |
+| 12 | `saltillo_terracotta.png` | Saltillo Terracotta Floor |
+| 13 | `ash_glaze_stoneware.png` | Anagama Ash-Glaze Stoneware |
+| 14 | `fluted_white_relief.png` | Fluted White Relief |
+| 15 | `matte_black_hex.png` | Matte Black Hex |
+
+**Pack:** `build_pack.py` maps textures to non-rotating concrete/terracotta blocks → `dist/Ceramics.zip`. To add a texture, add a row to `PACK` and rebuild. Free slots: yellow/light_blue/purple concrete and the rest of the terracotta colours.
+**Gotcha:** `white_porcelain` is `manual` in seamless.json. Never quilt its raw image, or the bulge comes back.

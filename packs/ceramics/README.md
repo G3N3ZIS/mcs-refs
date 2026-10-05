@@ -41,3 +41,11 @@ Cutting through the image like this slices cells in half, so mosaics are handled
 - **Grid or panel renders** (zellige, sage stack, Voronoi gold) already tile when the grout or joints run along the image edges. They use `"method": "none"`.
 - **Glowing-channel renders** that tile left/right but not top/bottom go through `conduit.py`. It lays a full-width channel along the seam, built from the image's own strongest horizontal channel.
 - For new mosaic prompts, ask for a *panel whose four edges run along joints*.
+
+## The resource pack
+
+`python3 build_pack.py` builds `dist/Ceramics/` and `dist/Ceramics.zip` (Java 1.21.x, pack_format 34), plus `previews/contact_sheet.jpg`.
+
+To install, drop `Ceramics.zip` into `.minecraft/resourcepacks`. The textures are 1024 px, so give the game enough video memory.
+
+Each texture replaces a **concrete or terracotta** block. Those never rotate, so the seamless textures stay continuous across walls. Glazed terracotta is skipped on purpose, because it rotates with placement. The full list is in `dist/Ceramics/MAPPING.txt`, and the `PACK` table in `build_pack.py` controls it.

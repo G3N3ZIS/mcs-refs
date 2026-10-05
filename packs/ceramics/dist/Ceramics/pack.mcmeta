@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "pack_format": 34,
+    "supported_formats": [
+      34,
+      48
+    ],
+    "description": "Ceramics: 15 seamless 1K ceramic blocks"
+  }
+}

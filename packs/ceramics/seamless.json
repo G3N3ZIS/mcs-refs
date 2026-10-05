@@ -21,7 +21,8 @@
     "method": "quilt"
   },
   "white_porcelain": {
-    "method": "quilt"
+    "method": "manual",
+    "note": "built by porcelain.py (flattened albedo + PBR); never quilt the raw"
   },
   "porcelain_hex_tiles": {
     "method": "quilt"
