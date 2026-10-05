@@ -69,5 +69,20 @@
   "glow_voronoi_plasma": {
     "method": "glow",
     "note": "panel layout; glow.py re-hues glow periodically + emissive"
+  },
+  "saltillo_terracotta": {
+    "method": "none",
+    "note": "3x3 grid, grout on edges"
+  },
+  "ash_glaze_stoneware": {
+    "method": "quilt"
+  },
+  "fluted_white_relief": {
+    "method": "manual",
+    "note": "centre grout band copied onto wrap edges"
+  },
+  "matte_black_hex": {
+    "method": "manual",
+    "note": "cropped to 3x5 lattice cells (279.36 x 169.97 px), ~1% stretch"
   }
 }
