@@ -41,5 +41,9 @@
   "voronoi_glaze_gold": {
     "method": "none",
     "note": "panel layout: edges already end on gold joints"
+  },
+  "pastel_zellige": {
+    "method": "none",
+    "note": "4x4 grid, 256 px pitch, grout already meets at the wrap"
   }
 }
