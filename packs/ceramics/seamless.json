@@ -61,5 +61,13 @@
   "plank_white": {
     "method": "none",
     "note": "derived: black plank replaced by mirrored top white plank"
+  },
+  "crystalline_glaze": {
+    "method": "quilt",
+    "post": "crystalline.py"
+  },
+  "glow_voronoi_plasma": {
+    "method": "glow",
+    "note": "panel layout; glow.py re-hues glow periodically + emissive"
   }
 }
