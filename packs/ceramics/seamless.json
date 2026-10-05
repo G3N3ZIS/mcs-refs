@@ -34,5 +34,8 @@
   },
   "tenmoku_hares_fur": {
     "method": "quilt"
+  },
+  "flambe_oxblood": {
+    "method": "quilt"
   }
 }

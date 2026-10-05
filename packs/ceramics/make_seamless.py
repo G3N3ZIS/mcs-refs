@@ -82,9 +82,24 @@ def _quilt_x(img: np.ndarray, band: int) -> np.ndarray:
     right = _min_cut(diff[:, c + gap:c + band]) + c + gap
     xs = np.arange(w)[None, :]
     mask = ((xs > left[:, None]) & (xs < right[:, None])).astype(np.float32)
-    mask = np.asarray(Image.fromarray((mask * 255).astype(np.uint8))
-                      .filter(ImageFilter.GaussianBlur(3)), np.float32)[..., None] / 255
-    return rolled * (1 - mask) + img * mask
+    hard = _wrap_blur(mask, 1.5)[..., None]
+    soft = _wrap_blur(mask, 40)[..., None]
+    # Fine detail follows the hard cut (no ghosting); broad colour follows a
+    # wide feather (no visible patch outlines where large colour zones differ).
+    lo_r, lo_i = _wrap_blur(rolled, 24), _wrap_blur(img, 24)
+    low = lo_r * (1 - soft) + lo_i * soft
+    high = (rolled - lo_r) * (1 - hard) + (img - lo_i) * hard
+    return low + high
+
+
+def _wrap_blur(a: np.ndarray, sigma: float) -> np.ndarray:
+    """Gaussian blur with wrap-around edges (FFT), for 2-D or HxWxC arrays."""
+    h, w = a.shape[:2]
+    fy, fx = np.fft.fftfreq(h)[:, None], np.fft.fftfreq(w)[None, :]
+    k = np.exp(-2 * (np.pi * sigma) ** 2 * (fy ** 2 + fx ** 2))
+    if a.ndim == 3:
+        k = k[..., None]
+    return np.real(np.fft.ifft2(np.fft.fft2(a, axes=(0, 1)) * k, axes=(0, 1)))
 
 
 def quilt(img: np.ndarray, band: int = 300) -> np.ndarray:
