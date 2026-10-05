@@ -1,0 +1,14 @@
+{
+  "delft_tile":          {"url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/I4GtXLh1BLv7WMbKnWrM/image_1791177945762_2c7e1e13_1791177946302_64053e0c.png", "replaces": "blue_glazed_terracotta"},
+  "azulejo_tile":        {"url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/I4GtXLh1BLv7WMbKnWrM/image_1791177949171_937ec8f2_1791177949279_401b97ac.png", "replaces": "light_blue_glazed_terracotta"},
+  "zellige_mosaic":      {"url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/I4GtXLh1BLv7WMbKnWrM/image_1791177952371_095cb410_1791177952439_9886a122.png", "replaces": "cyan_glazed_terracotta"},
+  "encaustic_tile":      {"url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/I4GtXLh1BLv7WMbKnWrM/image_1791177953658_fa588f9c_1791177953886_f568e732.png", "replaces": "red_glazed_terracotta"},
+  "kintsugi_raku":       {"url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/I4GtXLh1BLv7WMbKnWrM/image_1791177955616_c7c4c074_1791177955915_80aa7b9b.png", "replaces": "black_glazed_terracotta"},
+  "kintsugi_clay":       {"url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/I4GtXLh1BLv7WMbKnWrM/image_1791177960415_f9ba9242_1791177960502_a2406875.png", "replaces": "brown_glazed_terracotta"},
+  "kintsugi_celadon":    {"url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/I4GtXLh1BLv7WMbKnWrM/image_1791177960468_523eafcf_1791177960513_466a7f27.png", "replaces": "green_glazed_terracotta"},
+  "white_porcelain":     {"url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/I4GtXLh1BLv7WMbKnWrM/image_1791177962976_bb119d9b_1791177963016_b20abbf7.png", "replaces": "white_glazed_terracotta"},
+  "porcelain_hex_tiles": {"url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/I4GtXLh1BLv7WMbKnWrM/image_1791177965974_66a0c9c0_1791177966032_7cff9b52.png", "replaces": "light_gray_glazed_terracotta"},
+  "terracotta_meander":  {"url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/I4GtXLh1BLv7WMbKnWrM/image_1791177970796_e39a8418_1791177970896_5d7fdea1.png", "replaces": "orange_glazed_terracotta"},
+  "terracotta_scales":   {"url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/I4GtXLh1BLv7WMbKnWrM/image_1791177972419_38e0b73b_1791177972628_ae4990a6.png", "replaces": "terracotta"},
+  "tenmoku_hares_fur":   {"url": "https://cdn.openart.ai/openart-ai/production/2026-10/create-image/I4GtXLh1BLv7WMbKnWrM/image_1791177974660_18af665b_1791177975026_ab00fe57.png", "replaces": "gray_glazed_terracotta"}
+}

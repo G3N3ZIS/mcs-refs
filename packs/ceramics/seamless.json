@@ -1,0 +1,50 @@
+{
+  "delft_tile": {
+    "blend": true,
+    "border": 0.22
+  },
+  "azulejo_tile": {
+    "blend": true,
+    "border": 0.22
+  },
+  "zellige_mosaic": {
+    "blend": true,
+    "border": 0.22
+  },
+  "encaustic_tile": {
+    "blend": true,
+    "border": 0.22
+  },
+  "kintsugi_raku": {
+    "blend": true,
+    "border": 0.22
+  },
+  "kintsugi_clay": {
+    "blend": true,
+    "border": 0.22
+  },
+  "kintsugi_celadon": {
+    "blend": true,
+    "border": 0.22
+  },
+  "white_porcelain": {
+    "blend": true,
+    "border": 0.22
+  },
+  "porcelain_hex_tiles": {
+    "blend": true,
+    "border": 0.22
+  },
+  "terracotta_meander": {
+    "blend": true,
+    "border": 0.22
+  },
+  "terracotta_scales": {
+    "blend": true,
+    "border": 0.22
+  },
+  "tenmoku_hares_fur": {
+    "blend": true,
+    "border": 0.22
+  }
+}
