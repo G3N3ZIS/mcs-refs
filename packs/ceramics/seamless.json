@@ -53,5 +53,13 @@
   "tech_cyan_glow": {
     "method": "conduit",
     "note": "tiles L/R as rendered; T/B seam hidden by conduit.py"
+  },
+  "plank_white_black": {
+    "method": "none",
+    "note": "cropped 3 px L/R so wrap grout matches row joints"
+  },
+  "plank_white": {
+    "method": "none",
+    "note": "derived: black plank replaced by mirrored top white plank"
   }
 }
