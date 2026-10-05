@@ -3,7 +3,7 @@ white_concrete         <- Pure White Porcelain
 red_concrete           <- Oxblood Flambé Glaze
 green_concrete         <- Jade Voronoi Gold
 pink_concrete          <- Pastel Zellige Grid
-lime_concrete          <- Sage Subway Stack
+lime_concrete          <- Sage Wave Planks
 cyan_concrete          <- Cyan Neon Tech Panels
 gray_concrete          <- Monochrome Wave Planks
 light_gray_concrete    <- Arctic White Wave Planks
@@ -27,6 +27,6 @@ magenta_terracotta     <- Scandi Pastel Arches
 light_gray_terracotta  <- Calacatta Marble
 gray_terracotta        <- Greige Concrete Tiles
 purple_terracotta      <- Pastel Fish Scales
-yellow_concrete        <- Sage Wave Planks
 yellow_terracotta      <- Beige Wave Planks
 orange_terracotta      <- Rustic Brick Planks
+yellow_concrete        <- Sage Wave Planks

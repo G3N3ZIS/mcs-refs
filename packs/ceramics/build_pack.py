@@ -38,7 +38,9 @@ GLAZE = dict(smooth=(0.70, 0.92), blue=6)                 # glossy glaze (defaul
 MATTE = dict(smooth=(0.18, 0.45), blue=30)                # unglazed clay / cement
 GOLD = ("kintsugi", M.METAL["gold"], 28, 52, 0.50, 0.85)  # measured: seam hue 30-40  # gold seams as real metal
 MAT = {
-    "kintsugi_raku":       dict(GLAZE, metal_mask=GOLD),
+    # Petur 2026-10-05: "much more glossy" - near-mirror white dielectric (IOR 1.5)
+    "white_porcelain":     dict(smooth=(0.94, 0.99), blue=0),
+    "kintsugi_raku":      dict(GLAZE, metal_mask=GOLD),
     "kintsugi_celadon":    dict(GLAZE, metal_mask=GOLD),
     "kintsugi_clay":       dict(MATTE, metal_mask=GOLD),
     "voronoi_glaze_gold":  dict(GLAZE, metal_mask=GOLD),
@@ -66,7 +68,7 @@ PACK = {
     "flambe_oxblood":      ("Oxblood Flambé Glaze",       "red_concrete"),
     "voronoi_glaze_gold":  ("Jade Voronoi Gold",          "green_concrete"),
     "pastel_zellige":      ("Pastel Zellige Grid",        "pink_concrete"),
-    "sage_stack_bond":     ("Sage Subway Stack",          "lime_concrete"),
+    "plank_sage":          ("Sage Wave Planks",           "lime_concrete"),   # Petur 2026-10-05: 1x3, not the 2x8 stack
     "tech_cyan_glow":      ("Cyan Neon Tech Panels",      "cyan_concrete"),
     "plank_white_black":   ("Monochrome Wave Planks",     "gray_concrete"),
     "plank_white":         ("Arctic White Wave Planks",   "light_gray_concrete"),
@@ -90,10 +92,12 @@ PACK = {
     "marble_calacatta":    ("Calacatta Marble",           "light_gray_terracotta"),
     "greige_concrete":     ("Greige Concrete Tiles",      "gray_terracotta"),
     "fishscale_pastel":    ("Pastel Fish Scales",         "purple_terracotta"),
-    "plank_sage":          ("Sage Wave Planks",           "yellow_concrete"),
     "plank_beige":         ("Beige Wave Planks",          "yellow_terracotta"),
     "plank_rustic":        ("Rustic Brick Planks",        "orange_terracotta"),
 }
+
+# extra blocks that reuse a PACK texture (Petur 2026-10-05: keep yellow_concrete)
+ALIAS = {"yellow_concrete": "plank_sage"}
 
 
 def build():
@@ -112,6 +116,11 @@ def build():
         (blocks / f"{block}_s.png").write_bytes(s)
         print("  ", name)
 
+    for block, name in ALIAS.items():
+        src = PACK[name][1]
+        for suf in ("", "_n", "_s"):
+            shutil.copy(blocks / f"{src}{suf}.png", blocks / f"{block}{suf}.png")
+
     (root / "pack.mcmeta").write_text(json.dumps({"pack": {
         "pack_format": PACK_FORMAT,
         "supported_formats": {"min_inclusive": 34, "max_inclusive": PACK_FORMAT},
@@ -129,7 +138,8 @@ def build():
     icon.save(root / "pack.png")
 
     (root / "MAPPING.txt").write_text("\n".join(
-        f"{block:22s} <- {label}" for _, (label, block) in PACK.items()) + "\n")
+        [f"{block:22s} <- {label}" for _, (label, block) in PACK.items()]
+        + [f"{block:22s} <- {PACK[name][0]}" for block, name in ALIAS.items()]) + "\n")
 
     zpath = dist / "Ceramics.zip"
     with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:

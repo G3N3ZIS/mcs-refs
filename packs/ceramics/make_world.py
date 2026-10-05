@@ -34,8 +34,25 @@ def place_cube(label, block, rule, group, cx, cz):
 
 
 S.place_column = place_cube
+NL = chr(10)
+
+def update_function():
+    """World already exists: rewrite only the load function. It clears the whole
+    gallery first, so a changed PACK never leaves a stale cube or sign behind."""
+    lines, slots = S.commands()
+    x1 = max(s[4] for s in slots) + 1
+    z1 = max(s[5] for s in slots) + 1
+    clear = f"fill -1 {S.Y0} -2 {x1 + 1} {S.Y0 + 2} {z1 + 1} minecraft:air replace"
+    fn = os.path.join(S.WORLD, "datapacks", "g3n_showcase", "data", "g3n", "function", "place.mcfunction")
+    with open(fn, "w", encoding="utf-8") as fh:
+        fh.write(NL.join(lines[:1] + [clear] + lines[1:]) + NL)
+    print("updated", fn, len(slots), "cubes")
+
 
 if __name__ == "__main__":
+    if os.path.exists(S.WORLD):
+        update_function()
+        sys.exit(0)
     if not S.build_world():
         sys.exit(1)
     f = nbtlib.load(os.path.join(S.WORLD, "level.dat"))
