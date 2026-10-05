@@ -4,7 +4,7 @@
 **Folder:** `packs/ceramics/`
 **Goal:** 1K (1024²), seamless, hyperrealistic ceramic textures, generated with OpenArt Nano Banana 2 and made tileable locally.
 
-## Finished: 9 textures (+3 PBR maps)
+## Finished: 11 textures (+ PBR/emissive maps)
 
 | # | File | Descriptive name |
 |---|------|------------------|
@@ -22,7 +22,7 @@ Each one has a 2×2 tiling check in `previews/`.
 
 ## Picked but file never received (re-send each as a normal message): 15
 
-Clay kintsugi · Flat celadon kintsugi (approved remake) · Delft blue tiles · Victorian encaustic · Crystalline glaze (wants matte blue + metallic crystals + saturation up) · Iznik tulips · White/black-carbon Voronoi (fewer cells) · Hex-in-oak panel (choose: keep double frame, or trim to half) · Scandi pastel arches · Pastel fish-scale · Calacatta marble 2×2 · Pastel terrazzo · Greige concrete (needs grout painted on edges) · Sage 1×3 planks · Beige 1×3 planks · Rustic 1×3 planks (that's 16 counting all three plank colours)
+Clay kintsugi · Flat celadon kintsugi (approved remake) · Delft blue tiles · Victorian encaustic · Crystalline glaze (wants matte blue + metallic crystals + saturation up) · Iznik tulips · White/black-carbon Voronoi (fewer cells) · Hex-in-oak panel (user chose: TRIM frame to half width) · Scandi pastel arches · Pastel fish-scale · Calacatta marble 2×2 · Pastel terrazzo · Greige concrete (needs grout painted on edges) · Sage 1×3 planks · Beige 1×3 planks · Rustic 1×3 planks (that's 16 counting all three plank colours)
 
 ## Rendered in OpenArt, not yet reviewed: ~14
 
@@ -47,3 +47,7 @@ Hybrid hex→Voronoi · Walnut-lattice Voronoi · Plasma Voronoi panel · Pearl 
 ## Next step
 
 The user sends the backlog images in batches in normal messages. Process each one, add an entry to `seamless.json` and a 2×2 preview, then commit and push.
+
+### Added after the first handoff
+| 10 | `crystalline_glaze.png` (+`_metallic`, `_roughness`, `_normal`) | Frost Crystal Glaze: teal-cobalt matte with metallic gold/silver crystals |
+| 11 | `glow_voronoi_plasma.png` (+`_emissive`) | Plasma Voronoi Panel: obsidian cells, magenta-to-coral glowing crevices |
