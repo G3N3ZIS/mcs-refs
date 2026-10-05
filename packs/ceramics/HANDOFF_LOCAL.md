@@ -40,3 +40,9 @@ For each one: make a 2×2 preview in `previews/`, look at it, then add a row to 
 - `white_porcelain` must stay `manual`. Quilting its raw image brings the bulge back.
 - Never quilt cell or tile mosaics: the cuts slice through cells.
 - Look at the actual 2×2 join (crop around 1024,1024) before calling a texture done.
+
+## Done 2026-10-05 (PC session): 32 textures in dist/Ceramics.zip
+- 16 backlog renders processed by `finish.py` (seamless.json holds the per-texture method/crop), and every 2×2 join checked at full resolution.
+- Mosaics (zellige_star, fishscale_pastel): crop to whole autocorrelation periods, then `period_quilt` swaps in a copy rolled by whole periods around the wrap. The two copies only agree on grout, so the min-cut follows joints and fixes the hand-glaze colour flips without slicing cells.
+- Free slots left: purple_concrete only.
+- **Not done:** `voronoi_carbon_white` (random Voronoi with no period; the cells jam at the wrap; raw kept, regenerate as a panel). `armour_kintsugi_green` and `pearl_hex_glow` were not in the Downloads folder. Two extra renders were not processed: a jade Voronoi with brown grout and a dark multi-glow Voronoi.

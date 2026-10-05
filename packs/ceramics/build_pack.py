@@ -39,6 +39,22 @@ PACK = {
     "fluted_white_relief": ("Fluted White Relief",        "white_terracotta"),
     "matte_black_hex":     ("Matte Black Hex",            "black_terracotta"),
     "delft_tile":          ("Delft Blue Rosettes",        "light_blue_concrete"),
+    "kintsugi_clay":       ("Terracotta Kintsugi",        "terracotta"),
+    "kintsugi_celadon":    ("Celadon Crackle Kintsugi",   "green_terracotta"),
+    "azulejo_tile":        ("Azulejo Quatrefoil",         "blue_terracotta"),
+    "zellige_star":        ("Zellige Star Mosaic",        "cyan_terracotta"),
+    "encaustic_tile":      ("Victorian Encaustic",        "red_terracotta"),
+    "iznik_tulip":         ("Iznik Tulips",               "light_blue_terracotta"),
+    "artdeco_emerald":     ("Art Deco Emerald",           "lime_terracotta"),
+    "hex_oak":             ("Hex Tiles in Oak",           "brown_terracotta"),
+    "terrazzo_pastel":     ("Pastel Terrazzo",            "pink_terracotta"),
+    "scandi_arches":       ("Scandi Pastel Arches",       "magenta_terracotta"),
+    "marble_calacatta":    ("Calacatta Marble",           "light_gray_terracotta"),
+    "greige_concrete":     ("Greige Concrete Tiles",      "gray_terracotta"),
+    "fishscale_pastel":    ("Pastel Fish Scales",         "purple_terracotta"),
+    "plank_sage":          ("Sage Wave Planks",           "yellow_concrete"),
+    "plank_beige":         ("Beige Wave Planks",          "yellow_terracotta"),
+    "plank_rustic":        ("Rustic Brick Planks",        "orange_terracotta"),
 }
 
 
@@ -86,7 +102,7 @@ def contact_sheet(tex: Path, cell=256, cols=5) -> Image.Image:
     try:
         font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 15)
     except OSError:
-        font = ImageFont.load_default()
+        font = ImageFont.truetype("arial.ttf", 15)
     for i, (name, (label, _)) in enumerate(PACK.items()):
         x, y = (i % cols) * cell, (i // cols) * (cell + pad)
         sheet.paste(Image.open(tex / f"{name}.png").convert("RGB").resize((cell, cell), Image.LANCZOS), (x, y))

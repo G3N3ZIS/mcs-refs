@@ -4,13 +4,15 @@
     "note": "3x3 grid, wrap join matches inner joins"
   },
   "azulejo_tile": {
-    "method": "quilt"
+    "method": "none",
+    "note": "4x4 grid, grout already meets at the wrap"
   },
   "zellige_mosaic": {
     "method": "quilt"
   },
   "encaustic_tile": {
-    "method": "quilt"
+    "method": "none",
+    "note": "4x4 grid, grout already meets at the wrap"
   },
   "kintsugi_raku": {
     "method": "quilt"
@@ -86,5 +88,71 @@
   "matte_black_hex": {
     "method": "manual",
     "note": "cropped to 3x5 lattice cells (279.36 x 169.97 px), ~1% stretch"
+  },
+  "iznik_tulip": {
+    "method": "none",
+    "note": "2x2 grid, grout already meets at the wrap"
+  },
+  "artdeco_emerald": {
+    "method": "none",
+    "note": "4x4 grid, grout already meets at the wrap"
+  },
+  "scandi_arches": {
+    "method": "none",
+    "note": "4x4 grid, grout already meets at the wrap"
+  },
+  "plank_rustic": {
+    "method": "none",
+    "note": "1x3 planks, wrap joint matches row joints"
+  },
+  "marble_calacatta": {
+    "method": "none",
+    "crop": [
+      1,
+      1,
+      1023,
+      1023
+    ],
+    "note": "2x2; wrap grout was 4 px vs 2 px inside"
+  },
+  "plank_sage": {
+    "method": "none",
+    "crop": [
+      1,
+      1,
+      1023,
+      1023
+    ],
+    "note": "1x3; wrap joints ~11 px vs 9 px row joints"
+  },
+  "plank_beige": {
+    "method": "none",
+    "crop": [
+      4,
+      2,
+      1022,
+      1022
+    ],
+    "note": "1x3; wrap joints ~16/13 px vs ~10 px row joints"
+  },
+  "zellige_star": {
+    "method": "manual",
+    "note": "finish.py: 2 autocorrelation periods (511.7 px), sub-pixel box"
+  },
+  "fishscale_pastel": {
+    "method": "manual",
+    "note": "finish.py: 5x5 periods (170.6 x 171.4 px)"
+  },
+  "hex_oak": {
+    "method": "manual",
+    "note": "finish.py: 50 px oak frame trimmed to 25 px per edge"
+  },
+  "greige_concrete": {
+    "method": "manual",
+    "note": "finish.py: centre grout band copied onto wrap edges"
+  },
+  "terrazzo_pastel": {
+    "method": "manual",
+    "note": "finish.py: centre grout band copied onto wrap edges"
   }
 }
