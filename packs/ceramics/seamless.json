@@ -45,5 +45,9 @@
   "pastel_zellige": {
     "method": "none",
     "note": "4x4 grid, 256 px pitch, grout already meets at the wrap"
+  },
+  "sage_stack_bond": {
+    "method": "none",
+    "note": "2x8 grid, 512x128 px pitch, grout already meets at the wrap"
   }
 }
