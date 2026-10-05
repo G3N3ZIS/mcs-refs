@@ -39,7 +39,8 @@ MATTE = dict(smooth=(0.18, 0.45), blue=30)                # unglazed clay / ceme
 GOLD = ("kintsugi", M.METAL["gold"], 28, 52, 0.50, 0.85)  # measured: seam hue 30-40  # gold seams as real metal
 MAT = {
     # Petur 2026-10-05: "much more glossy" - near-mirror white dielectric (IOR 1.5)
-    "white_porcelain":     dict(smooth=(0.94, 0.99), blue=0),
+    "white_porcelain":     dict(smooth=(0.94, 0.99), blue=0, nrm_strength=0.5),  # "tone down the normal a bit"
+    "black_porcelain":     dict(smooth=(0.94, 0.99), blue=0, nrm_strength=0.5),  # same glaze as the white
     "kintsugi_raku":      dict(GLAZE, metal_mask=GOLD),
     "kintsugi_celadon":    dict(GLAZE, metal_mask=GOLD),
     "kintsugi_clay":       dict(MATTE, metal_mask=GOLD),
@@ -94,6 +95,7 @@ PACK = {
     "fishscale_pastel":    ("Pastel Fish Scales",         "purple_terracotta"),
     "plank_beige":         ("Beige Wave Planks",          "yellow_terracotta"),
     "plank_rustic":        ("Rustic Brick Planks",        "orange_terracotta"),
+    "black_porcelain":     ("Jet Black Porcelain",        "purple_concrete"),
 }
 
 # extra blocks that reuse a PACK texture (Petur 2026-10-05: keep yellow_concrete)

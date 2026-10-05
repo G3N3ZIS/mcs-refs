@@ -154,5 +154,9 @@
   "terrazzo_pastel": {
     "method": "manual",
     "note": "finish.py: centre grout band copied onto wrap edges"
+  },
+  "black_porcelain": {
+    "method": "quilt",
+    "note": "OpenArt Flare fD3lrcj5Af4UJsZQUEGt (2026-10-05), anchor = white_porcelain"
   }
 }
