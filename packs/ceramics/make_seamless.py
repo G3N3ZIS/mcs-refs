@@ -131,6 +131,8 @@ if __name__ == "__main__":
     out.mkdir(parents=True, exist_ok=True)
     config = json.loads((Path(__file__).parent / "seamless.json").read_text())
     for name, cfg in config.items():
+        if cfg.get("method") == "conduit":            # handled by conduit.py
+            continue
         src = raw / f"{name}.png"
         if not src.exists():
             print("missing", src)

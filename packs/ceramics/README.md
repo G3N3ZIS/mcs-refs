@@ -34,3 +34,10 @@ The prompts are kept in the OpenArt history. They all share the same suffix: *fl
 `porcelain.py` builds `white_porcelain` as a full PBR set: albedo, `_normal` (OpenGL, Y+), `_roughness` and `_height`. It flattens the baked-in lighting from the AI render. The micro surface (orange-peel ripple, fine grain and pinholes) is built from periodic noise, so every map tiles exactly.
 
 Material settings: dielectric with **IOR 1.5** (porcelain glaze is 1.50–1.55, so F0 ≈ 0.04), roughness ≈ 0.07 and an albedo of about 0.84 linear. It reads as glossy without looking like glass because the white body is opaque, with no transmission. In engines with a clearcoat, an alternative is base roughness 0.3 plus clearcoat 1.0 at clearcoat roughness 0.05. A little subsurface scattering in a warm white softens the edges.
+
+## Mosaics and channel layouts
+
+Cutting through the image like this slices cells in half, so mosaics are handled per layout:
+- **Grid or panel renders** (zellige, sage stack, Voronoi gold) already tile when the grout or joints run along the image edges. They use `"method": "none"`.
+- **Glowing-channel renders** that tile left/right but not top/bottom go through `conduit.py`. It lays a full-width channel along the seam, built from the image's own strongest horizontal channel.
+- For new mosaic prompts, ask for a *panel whose four edges run along joints*.

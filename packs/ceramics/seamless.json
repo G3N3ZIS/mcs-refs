@@ -49,5 +49,9 @@
   "sage_stack_bond": {
     "method": "none",
     "note": "2x8 grid, 512x128 px pitch, grout already meets at the wrap"
+  },
+  "tech_cyan_glow": {
+    "method": "conduit",
+    "note": "tiles L/R as rendered; T/B seam hidden by conduit.py"
   }
 }
