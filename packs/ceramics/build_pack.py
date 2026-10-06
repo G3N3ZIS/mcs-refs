@@ -99,7 +99,11 @@ PACK = {
 }
 
 # extra blocks that reuse a PACK texture (Petur 2026-10-05: keep yellow_concrete)
-ALIAS = {"yellow_concrete": "plank_sage"}
+# polished_diorite / polished_andesite: their block, slab and stairs all read ONE
+# texture, so this gives porcelain slabs + stairs (Genesis leaves both alone).
+ALIAS = {"yellow_concrete": "plank_sage",
+         "polished_diorite": "white_porcelain",
+         "polished_andesite": "black_porcelain"}
 
 
 def build():

@@ -31,3 +31,5 @@ yellow_terracotta      <- Beige Wave Planks
 orange_terracotta      <- Rustic Brick Planks
 purple_concrete        <- Jet Black Porcelain
 yellow_concrete        <- Sage Wave Planks
+polished_diorite       <- Pure White Porcelain
+polished_andesite      <- Jet Black Porcelain
