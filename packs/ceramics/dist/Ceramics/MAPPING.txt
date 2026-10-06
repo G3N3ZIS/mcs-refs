@@ -1,5 +1,4 @@
 black_concrete         <- Black Raku Kintsugi
-white_concrete         <- Pure White Porcelain
 red_concrete           <- Oxblood Flambé Glaze
 green_concrete         <- Jade Voronoi Gold
 pink_concrete          <- Pastel Zellige Grid
@@ -31,5 +30,3 @@ yellow_terracotta      <- Beige Wave Planks
 orange_terracotta      <- Rustic Brick Planks
 purple_concrete        <- Jet Black Porcelain
 yellow_concrete        <- Sage Wave Planks
-polished_diorite       <- Pure White Porcelain
-polished_andesite      <- Jet Black Porcelain

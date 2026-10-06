@@ -65,7 +65,6 @@ MAT = {
 # texture -> (display name, vanilla block it replaces)
 PACK = {
     "kintsugi_raku":       ("Black Raku Kintsugi",        "black_concrete"),
-    "white_porcelain":     ("Pure White Porcelain",       "white_concrete"),
     "flambe_oxblood":      ("Oxblood Flambé Glaze",       "red_concrete"),
     "voronoi_glaze_gold":  ("Jade Voronoi Gold",          "green_concrete"),
     "pastel_zellige":      ("Pastel Zellige Grid",        "pink_concrete"),
@@ -99,11 +98,7 @@ PACK = {
 }
 
 # extra blocks that reuse a PACK texture (Petur 2026-10-05: keep yellow_concrete)
-# polished_diorite / polished_andesite: their block, slab and stairs all read ONE
-# texture, so this gives porcelain slabs + stairs (Genesis leaves both alone).
-ALIAS = {"yellow_concrete": "plank_sage",
-         "polished_diorite": "white_porcelain",
-         "polished_andesite": "black_porcelain"}
+ALIAS = {"yellow_concrete": "plank_sage"}
 
 
 def build():

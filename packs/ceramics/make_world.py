@@ -21,15 +21,7 @@ NAME = "Ceramic pack"
 S.WORLD = os.path.join(S.PROFILE, "saves", NAME)
 S.PITCH = 5                              # 2-block cube + 3 empty
 S.COLS = 8
-S.GROUPS = [("ceramics", [(label, "minecraft:" + block, S.SOLID) for label, block in PACK.values()]),
-            # porcelain on vanilla families that have slabs + stairs (build_pack.ALIAS)
-            ("shapes", [(f"{name} {shape}", f"minecraft:{fam}{suffix}", S.SOLID)
-                        for name, fam in (("White Porcelain", "polished_diorite"),
-                                          ("Black Porcelain", "polished_andesite"))
-                        for shape, suffix in (("block", ""), ("slab", "_slab[type=bottom]"),
-                                              ("stairs", "_stairs[facing=north]"))])]
-
-
+S.GROUPS = [("ceramics", [(label, "minecraft:" + block, S.SOLID) for label, block in PACK.values()])]
 def place_cube(label, block, rule, group, cx, cz):
     y = S.Y0
     out = [f"fill {cx} {y} {cz} {cx + 1} {y + 1} {cz + 1} {block} replace"]
