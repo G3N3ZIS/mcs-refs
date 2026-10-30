@@ -1,0 +1,24 @@
+{
+  "regneark": "../ENK-regnskap-2027.xlsx",
+  "innboks": "innboks",
+  "bilag": "bilag",
+  "backup": "backup",
+  "status": "status.json",
+
+  "gmail": {
+    "aktiv": false,
+    "adresse": "din.adresse@gmail.com",
+    "etikett": "Kvitteringer"
+  },
+
+  "regler": [
+    {"ord": ["openart", "higgsfield", "adobe", "anthropic", "claude", "openai", "github", "fiken", "conta", "domeneshop", "one.com"], "kategori": "Programvare og abonnementer"},
+    {"ord": ["telenor", "telia", "ice", "talkmore", "altibox", "get"], "kategori": "Telefon og internett", "næringsandel": 0.5},
+    {"ord": ["elkjøp", "elkjop", "komplett", "power", "proshop", "kjell"], "kategori": "Utstyr under 30 000 kr"},
+    {"ord": ["vy", "flytoget", "norwegian", "sas", "widerøe", "ruter", "hotel"], "kategori": "Reise (tog, fly, hotell)"},
+    {"ord": ["meta", "facebook ads", "google ads", "tiktok ads"], "kategori": "Reklame og markedsføring"},
+    {"ord": ["stripe", "vipps", "paypal", "sumup"], "kategori": "Bank- og betalingsgebyr"},
+    {"ord": ["posten", "bring", "postnord"], "kategori": "Porto og frakt"},
+    {"ord": ["udemy", "coursera", "skillshare", "ark", "adlibris"], "kategori": "Kurs og faglitteratur"}
+  ]
+}
