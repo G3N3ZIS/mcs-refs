@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="660" viewBox="0 0 900 660" font-family="Helvetica, Arial, sans-serif">
+  <!-- Scale: 1 m = 120 px. Origin (top-left of plan) at (120,100). -->
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1f3a93"/>
+    </marker>
+    <pattern id="grid" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M12 0 H0 V12" fill="none" stroke="#e6e9f0" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="660" fill="#ffffff"/>
+  <rect x="120" y="100" width="600" height="360" fill="url(#grid)"/>
+
+  <!-- Stair zone (bottom-right, below the 2 m line) -->
+  <rect x="264" y="340" width="456" height="120" fill="#f3f6fc"/>
+  <g stroke="#9aa6c4" stroke-width="1.5">
+    <line x1="264" y1="370" x2="720" y2="370"/>
+    <line x1="264" y1="400" x2="720" y2="400"/>
+    <line x1="264" y1="430" x2="720" y2="430"/>
+  </g>
+  <text x="492" y="420" text-anchor="middle" font-size="18" fill="#4a5578" font-style="italic">Trapp (stairs) — 4 m</text>
+
+  <!-- Outline -->
+  <g fill="none" stroke="#111" stroke-width="4" stroke-linejoin="miter">
+    <polyline points="720,340 720,100 120,100 120,460 720,460"/>
+  </g>
+  <line x1="300" y1="340" x2="720" y2="340" stroke="#111" stroke-width="3"/>
+  <line x1="720" y1="340" x2="720" y2="460" stroke="#111" stroke-width="2" stroke-dasharray="8 6"/>
+
+  <g stroke="#1f3a93" stroke-width="1.5" fill="none">
+    <!-- 3 m (left) -->
+    <line x1="60" y1="100" x2="60" y2="460" marker-start="url(#a)" marker-end="url(#a)"/>
+    <line x1="48" y1="100" x2="112" y2="100"/><line x1="48" y1="460" x2="112" y2="460"/>
+    <!-- 2 m (right) -->
+    <line x1="780" y1="100" x2="780" y2="340" marker-start="url(#a)" marker-end="url(#a)"/>
+    <line x1="728" y1="100" x2="792" y2="100"/><line x1="728" y1="340" x2="792" y2="340"/>
+    <!-- 3.5 m (on the internal line) -->
+    <line x1="300" y1="310" x2="720" y2="310" marker-start="url(#a)" marker-end="url(#a)"/>
+    <line x1="300" y1="300" x2="300" y2="336"/>
+    <!-- 1.2 m (bottom-left) -->
+    <line x1="120" y1="495" x2="264" y2="495" marker-start="url(#a)" marker-end="url(#a)"/>
+    <line x1="264" y1="464" x2="264" y2="505"/>
+    <!-- 5 m (bottom overall) -->
+    <line x1="120" y1="560" x2="720" y2="560" marker-start="url(#a)" marker-end="url(#a)"/>
+    <line x1="120" y1="464" x2="120" y2="572"/><line x1="720" y1="464" x2="720" y2="572"/>
+  </g>
+  <g fill="#1f3a93" font-size="22" font-weight="bold" text-anchor="middle">
+    <text x="40" y="288" transform="rotate(-90 40 288)">3 m</text>
+    <text x="820" y="228">2 m</text>
+    <text x="510" y="300">3,5 m</text>
+    <text x="192" y="525">1,2 m</text>
+    <text x="420" y="590">5 m</text>
+  </g>
+
+  <!-- Scale bar -->
+  <g transform="translate(120,625)" font-size="13" fill="#333">
+    <rect x="0" y="0" width="120" height="8" fill="#111"/>
+    <rect x="120" y="0" width="120" height="8" fill="#fff" stroke="#111"/>
+    <text x="0" y="24">0</text><text x="120" y="24" text-anchor="middle">1 m</text><text x="240" y="24" text-anchor="middle">2 m</text>
+    <text x="270" y="9">Scale 1 m = 120 px · plan view</text>
+  </g>
+</svg>
